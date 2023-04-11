@@ -1,0 +1,98 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="listener.js" type="text/javascript"></script>
+</head>
+<body>
+    <video autoplay muted loop id="backvideo">
+        <source src="backvid.mp4" type="video/mp4">
+      </video> 
+      <audio autoplay loop id="backaudio">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="load-container" id="loading">  
+        <h1 id="name-tag"">SWIFTY-LOADING</h1> 
+        <div class="hints-con">
+          <div style="display: none;" id="hintone">
+            <!--edit here and below-->
+            <ul>
+              <p style="font-size: 4px; text-align: left;">🟣⚫⚫</p>
+              <li>Something here that will help you out. goto html and edit line 20</li>
+              <li>Edit these 2 hints to what you would like in the html</li>
+            </ul> 
+             <!--don't touch below-->
+          </div>
+          <div style="display: none;" id="hinttwo">
+            <!--edit here and below-->
+            <ul>
+              <p style="font-size: 4px; text-align: left;">⚫🟣⚫</p>
+              <li>Something here that will help you out. goto html and edit line 30</li>
+              <li>Edit these 2 hints to what you would like in the html</li>
+            </ul> 
+             <!--don't touch below-->
+          </div>
+          <div style="display: none;" id="hintthree">
+            <!--edit here and below-->
+            <ul>
+              <p style="font-size: 4px; text-align: left;">⚫⚫🟣</p>
+              <li>Something here that will help you out. goto html and edit line 38</li>
+              <li>Edit these 2 hints to what you would like in the html</li>
+            </ul> 
+            <!--don't touch below-->
+          </div>
+        </div>    
+        <div class="button-container" id="btnback">
+          <img src="icons/discord.png" class="ibuttons" id="dbtn" >
+          <img src="icons/website.png" class="ibuttons" id="wbtn">
+          <img src="icons/tabex.png" class="ibuttons" id="tbtn">
+      </div>
+      <footer id="bf">@swifty-loading</footer>
+      <img class="logo" src="design/logo.png">
+      
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script type="text/javascript">
+
+    function sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+    }
+    function hints1() {
+      var hint1 = document.getElementById('hintone').style;
+      var hint2 = document.getElementById('hinttwo').style
+      var hint3 = document.getElementById('hintthree').style
+      hint1.display = 'block';
+      hint2.display = 'none';
+      hint3.display = 'none';
+      setTimeout(hints2, 12000)
+    } 
+    function hints2() {
+      var hint1 = document.getElementById('hintone').style;
+      var hint2 = document.getElementById('hinttwo').style
+      var hint3 = document.getElementById('hintthree').style
+      hint2.display = 'block';
+      hint1.display = 'none';
+      hint3.display = 'none';
+      setTimeout(hints3, 12000)
+    } 
+    function hints3() {
+      var hint1 = document.getElementById('hintone').style;
+      var hint2 = document.getElementById('hinttwo').style
+      var hint3 = document.getElementById('hintthree').style
+      hint3.display = 'block';
+      hint1.display = 'none';
+      hint2.display = 'none';
+      setTimeout(hints1, 12000)
+    } 
+    
+    window.onload = hints1;
+    </script>
+</body>
+</html>

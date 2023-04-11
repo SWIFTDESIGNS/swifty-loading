@@ -1,0 +1,123 @@
+@keyframes show {
+    from {opacity: 0;}
+  }
+@keyframes lc {
+    from {width:40px;}
+  }
+@keyframes hints {
+    from {opacity:0;}   
+  }
+@keyframes logo-anim {
+    from {scale: 0;}
+  }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    overflow: hidden;
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+#backvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#name-tag {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 390px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation-name: show;
+    animation-duration: 3s
+}
+
+.load-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(design/background.png);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+.button-container {
+    position: fixed;
+    width: 12%;
+    height: 5%;
+    margin: auto;
+    right: 43.9%;
+    background-color: white;
+    border-radius: 9px;
+    margin-top:3%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0px 0px;
+    -webkit-box-shadow: inset 0px 0px 71px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 71px -30px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 71px -30px rgba(0,0,0,0.75);
+    animation-name: lc;
+    animation-duration: 2s;
+}
+
+.ibuttons {
+    max-width: 43px;
+    width: 40px;
+    margin: auto;
+}
+.ibuttons:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    animation-name: logo-anim;
+    animation-duration: 3s
+}
+
+.hints-con {
+    position: initial;
+    margin-left: -400px;
+    margin: auto;
+    width: 25%;
+    height: 9.4%;
+    margin-top: 21%;
+    border-top: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(32, 32, 32, 0.664);
+    animation-name: hints;
+    animation-duration: 3s;
+}
+li {
+    text-align: left;
+}
+ul.frames {
+    font-size: 0;
+  }
+  ul.frames li {
+    font-size: 14px; font-size:1.4rem;
+    display: inline;
+  }
+
+#bf {
+    margin-top: 6.2%;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    animation-name: show;
+    animation-duration: 3s;
+}
+
+
