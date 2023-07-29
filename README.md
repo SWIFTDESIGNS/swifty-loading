@@ -20,11 +20,14 @@ once doing that you can drag the folder to your resources and then we move on to
 
 
 **Editing the hints**
-Head over to your **index.html** then scroll down to lines **22, 24** to edit your first hints,
+Head over to your **index.html** then scroll down to lines **22, 24** to edit your first Hints,
 for your second and third hints you will wind those at lines **Hint 2 - 31, 34 | Hint 3 - 41,44**.
 These hints are only meant to be short so keep that in mind.
 ![image](https://github.com/SWIFTDESIGNS/swifty-loading/assets/57051852/b86f9edc-8b71-42ab-81ba-c1a6bbcd4511)
 
+**Editing Rules**
+Head over to your **index.html** then scroll down to lines **53, 60** to edit your Rules,
+![image](https://github.com/SWIFTDESIGNS/swifty-loading/assets/57051852/984b3817-3f06-4074-a1ad-efb8e9729e60)
 
 
 **Changing the look of the loading screen**
