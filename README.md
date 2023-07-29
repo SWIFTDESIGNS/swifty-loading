@@ -14,6 +14,7 @@ once doing that you can drag the folder to your resources and then we move on to
 
 
 
+
 **Configuration and more**
 **1**.Configuring the variables to your liking, The config is located in the **/HTML** folder and is called **listener.js**, so now open in an editor and only edit from lines **2, 6**.
 ![image](https://github.com/SWIFTDESIGNS/swifty-loading/assets/57051852/316e5367-836f-41ad-85bf-2898c146c1c7)
